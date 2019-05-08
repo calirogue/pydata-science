@@ -1,16 +1,16 @@
 # Basic reference of python in data science
 
-# python3.7
+#### python3.7
 
-# OS: debian linux
+#### OS: debian linux
 
-Folders:
+## Folders:
 
-### basics: strings, conditions, loops
+ basics: strings, conditions, loops
 
-### data: sets, dictionaries, tuples
+ data: sets, dictionaries, tuples
 
-# to install python3.7 on debian linux:
+## to install python3.7 on debian linux:
 
 1. `sudo apt-get update`
 2. `sudo apt-get install python3.7`
