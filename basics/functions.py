@@ -63,9 +63,20 @@
 
 # collection arguments :
 
-def ArtistNames(*names):
-    for name in names:
-        print(name)
+# def ArtistNames(*names):
+#     for name in names:
+#         print(name)
 
 
-ArtistNames = ("Mayhem", "311", "Slayer")
+# ArtistNames = ("Mayhem", "311", "Slayer")
+
+
+# def hello():
+#     print("hello")
+
+
+# def add(x):
+#     return(x+x)
+
+
+# add(1)
