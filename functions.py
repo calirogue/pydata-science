@@ -13,7 +13,7 @@
 
 # print(len([sum([0, 0, 1])]))
 
-# sorted vs sort 
+# sorted vs sort
 # three_eleven_ratings = [10, 9.3, 9.1, 3.1, 3.11, 4.11, 6.55]
 # sorted_three_eleven_ratings = sorted(three_eleven_ratings)
 # print(sorted_three_eleven_ratings)
@@ -36,6 +36,36 @@
 #     return b
 
 # function can have multi parameters
-def Mult(a,b):
-    c = a * b
-    return c
+# def Mult(a,b):
+#     c = a * b
+#     return c
+
+# def NoWork():
+#     pass
+#     print(NoWork())
+
+
+# display a list:
+# def printStuff(Stuff):
+#     for i, s in enumerate(Stuff):
+#         print("Album", i, "Rating is ", s)
+
+
+# three_eleven_ratings = [10, 9.3, 9.1, 3.1, 3.11, 4.11, 6.55]
+# printStuff(three_eleven_ratings)
+
+# def Print(A):
+#     for a in A:
+#         print(a+'1')
+
+
+# Print(['a', 'b', 'c'])
+
+# collection arguments :
+
+def ArtistNames(*names):
+    for name in names:
+        print(name)
+
+
+ArtistNames = ("Mayhem", "311", "Slayer")
