@@ -1,10 +1,10 @@
 # Basic reference of python in data science
 
-# python3.7
+#### python3.7
 
-# OS: debian linux
+#### OS: debian linux
 
-Folders:
+## Folders:
 
 ### basics: strings, conditions, loops
 
