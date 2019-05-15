@@ -1,0 +1,27 @@
+Types of relationships
+
+Building blocks:
+- Building blocks of a relationship are:
+1. Entities sets,
+2. Relationship sets,
+3. Crows foot notations
+
+Defining relationships between entities:
+- many authors writing a book ... One author writing multiple books
+- Relationship between the book and the author
+
+One-to-One relationship:
+- A book is written by one author
+Book || Authored by || Author 
+
+One-to-Many relationship:
+- A book written by many authors
+- Crows foot notation, less-than symbol
+- Many-to-one relationship for many authors write a single book
+Book || Authored By < Author 
+
+Many-to-Many relationship
+- Crows foot notation, less than symbol
+- Many books written by many authors 
+- Many authors writing many books
+Book > Authored by < Author
