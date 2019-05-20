@@ -1,0 +1,58 @@
+Why data analysis?
+- Data is everywhere
+- Data helps answer questions from data
+- discover info 
+- predict
+
+1. The problem
+2. Understanding the data
+3. Importing and Exporting data in python
+
+
+1. Scientifics computing libraries
+    1. Pandas (data structures & tools)
+    2. Numpy (arrays & matrices)
+    3. SciPy (integgrals, solving differential equations, optimization)
+
+2. Visualization Libraries in Python
+    1. Matplotlib (plots, graphs)
+    2. Seaborn (plots : head maps, time series, violin plots)
+
+3. Algorithmic libraries
+    1. Scikit-learn (machine learning : regression, classification )
+    2. Statsmodels (Explore data, estimate statisical models, perform statistical tests)
+
+
+
+
+
+-- Importing data
+1. two properties :
+- format (csv, json, xlsx)
+- file path of dataset ( computer: /desktop/mydata.csv)
+
+
+-- Importing a CSV into Python
+1. import pandas as pd 
+2. url = "example.com"
+3. df = pd.read_csv(url)
+
+-- Importing a CSV without a header
+1.  import pandas as pd
+2. url = "example.com"
+3. df = pd.read_csv(url, header = None)
+
+Printing the dataframe in python
+- df prints the entire dataframe
+- df.head(n) show first rows of data 
+- df.tail(n) shows bottom rows of data
+
+Adding headers:
+- replace default header - df.columns = headers
+1. headers = ["x", "y", "z"]
+2. df.columns = headers
+3. df.head(5)
+
+Exporting a pandas dataframe to CSV
+1. path = "linux/matt/home"
+2. df.to_csv(path)
