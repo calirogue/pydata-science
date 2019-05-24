@@ -1,0 +1,17 @@
+Predition and Decision Making:
+
+Decision making: 
+- determining a good model fit 
+- to determine best fit: 
+    - do the predited values make sense
+    - visualization
+    - numerical measures for evaluation
+    - comparing models
+
+Do the predicted values make sense:
+- First train the model :
+1. lm.fit(df['highway-mpg'], df['prices'])
+2. Preixt the price of a car with 30 highway-mpg
+lm.predict(30)
+3. result:
+lm.coef
