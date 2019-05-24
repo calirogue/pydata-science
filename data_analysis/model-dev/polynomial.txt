@@ -1,0 +1,9 @@
+Polynomial regression and pipelines
+
+- special case of the general linear regression model
+- useful for describing curvilinear relationships
+
+Curvilinear relationships :
+- By squaring or setting higher-order terms of the 
+predictor variables
+

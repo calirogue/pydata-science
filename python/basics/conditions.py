@@ -1,7 +1,7 @@
-# comparison operations 
+a  # comparison operations
 
 # a = 7
-# b = 6 
+# b = 6
 # print(a == b)
 
 # i = 6
@@ -31,14 +31,14 @@
 #     print("no 311")
 # elif (age > 10):
 #     print("see 311")
-# else: 
+# else:
 #     print("move on")
 
-# or 
+# or
 # three_eleven = 1992
 # if (three_eleven < 1990) or (three_eleven > 1991):
 #     print("It was an inside job")
-# else: 
+# else:
 #     print("It was not an inside job")
 
 
