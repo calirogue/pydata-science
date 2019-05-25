@@ -1,0 +1,56 @@
+Model Evaluation and Refinement
+- In-sample Evaluation tells us how well our model will fit the data used to train it
+
+Problem? 
+    - does not tell us how well the trained model can be used to predict new data
+
+Solution?
+    - in-sample data or training data to train the model 
+    - out-of-sample Evaluation or test set
+
+
+-- Training / testing sets
+Split dataset into:
+    - training set 70%
+    - testing set 30%
+- build and train the model with a training set
+- use testing set to assess the performance of a predictive model
+- when completed the testing model, then use all the data to train the model to get 
+the best performance
+
+Function train_test_split()
+from sklearn.model_selection import train_test_split
+- split data into random train and est subsets
+x_data: features or independent variables
+y_data: dataset target: df['price']
+x_train, y_train: parts of available data as training set
+test_size: percentage of the data for testing
+random_state: for random data
+
+Generalization Performance 
+- Generalization error is measure of how well our data does at predicting
+previously unseen data
+- the error we obtain using our testing data is an approximation of this error
+
+Cross Validation
+- most common out-of-sample evaluation metrics
+- more effective use of data (each observation is used for both training and testing)
+
+Function cross_val_score()
+from sklearn.model_selection import cross_val_score
+scores=cross_val_score(lr, x_data, y_data,cv=3) // lr = linear regression
+
+
+Function cross_val_predict()
+- it returns the prediction that was obtained for each element when it was in
+the test set
+- has similar interface to cross_val_score
+
+from sklearn.model_selection import cross_val_predict
+yhat = cross_val_predict(lr2e, x_data, y_data, cv=3)
+
+
+
+
+
+-----------------------------------------------------------------
