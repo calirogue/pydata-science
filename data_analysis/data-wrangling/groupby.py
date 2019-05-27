@@ -23,3 +23,7 @@ df_pivot = df_grp.pivot(index='barrel', columns='charging-handle')
 plt.pcolor(df_pivot, cmap='RdBBu')
 plt.colorbar()
 plt.show()
+
+
+1. df.dtypes
+prints out all the data types

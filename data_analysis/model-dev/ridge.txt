@@ -1,0 +1,9 @@
+Ridge Regression
+- prevents overlifting
+
+from sklearn.linear_model import Ridge
+RigeModel=Ridge(alpha=0.1)
+RigeModel.fit(X, y)
+Yhat=RigeModel.predict(X)
+
+train > predict > R squared

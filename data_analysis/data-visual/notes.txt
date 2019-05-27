@@ -1,0 +1,17 @@
+Data Visualization with Python:
+
+1. Matplotlib
+2. Seaborn
+3. Folium
+
+Why build visuals?
+1. for exploratory data analysis
+2. communicate data clearly
+3. share unbiased representation of data
+4. use them to support recommendations to different stakeholders
+
+Best practices:
+- Darkhorse analytics -
+1. Less is more effective
+2. Less is more attractive
+3. Less is more impactive
