@@ -1,0 +1,138 @@
+ML to make predictions
+
+0. Get data
+1. clean data
+2. select proper algorithm for building prediction model
+3. train model to understand patterns in data
+
+- Once the model has been trained by going through data iteratively, it can be
+used to predict your new or unknown
+
+What is machine learning?
+    - the subfield of computer science that gives "computers the ability to learn
+    without being explicitly programmed - Arthur Samuel"
+
+    - Data > feature extraction > a machine learning model > output
+
+Major ML techniques:
+- Regression / Estimation 
+    - Predicting continous values
+
+- classification
+    - predicting the item class / category of a case
+
+- clustering
+    - finding the structure of data, summarization
+
+- associations
+    - associating frequent co-occuring items / events
+
+- Anomaly detection
+    - discovering adnormal and unusual cases
+
+- Sequence mining
+    - Predicting next events; click-steam (Markov model, HMM)
+
+- Dimension Reduction
+    - Reducing the size of data (PCA)
+
+- Recommendation Systems
+    - Recommending items
+
+
+Difference between artificial intelligence, machine learning, and deep learning?
+
+AI components:
+    - computer vision
+    - language processing
+    - creativity
+
+ML components:
+    - classification
+    - clustering
+    - neural networks
+
+Revolution in ML:
+    - Deep learning
+
+
+----------------------------------------------------
+
+
+- Python for Machine learning -
+
+Libraries: 
+1. numpy - math library to work with N-dimensional arrays in Python
+
+2. scipy -  collection of numerical algorithms and domain specific toolboxes, 
+including signal processing, optimization, statistics and much more
+
+3. matplotlib - plotting package that provides 2D plotting, as well as 3D plotting
+
+4. Pandas - is a very high-level Python library that provides high
+performance easy to use data structures. It has many functions for data 
+importing, manipulation and analysis. In particular, it offers data structures 
+and operations for manipulating numerical tables and timeseries. 
+
+5. scikitLearn - has most of the classification, regression and clustering
+algorithms, and it's designed to work with a Python numerical and scientific
+libraries; NumPy and SciPy.
+- cikit Learn including pre-processing of data, feature selection, 
+feature extraction, train test splitting, defining the algorithms,
+fitting models, tuning parameters, prediction, evaluation and exporting the 
+model
+
+Example: 
+from sklearn import preprocessing
+X = preprocessing.StandardScaler().fit(X).transform(X)
+
+from sklearn.model_selection import tran_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
+
+from sklearn import svm
+clf = svm.SVC((gamma=o.001, C=100))
+
+clf.fit(x_train, y_train)
+clf.predit(X_test)
+
+from sklearn.metrics import confusion_matrix
+print(confusion_matrix(y_test, yhat, label=[1,0]))
+
+import pickle
+s = pickle.dumps(clf)
+
+
+------------------------------------------------------
+
+
+Supervised vs unsupervised
+
+What is supervised learning?
+-  observe, and direct the execution of a task, project, or activity
+- teach the model by loading with knowledge (data) to predict
+- teach the model by training it with some data from a labeled dataset
+
+Two types of supervised learning
+1. classification
+    - the process of predicting discrete class labels or categories
+2. regression
+    - process of predicting continuous values
+
+
+what is unsupervised learning?
+- model works on its own to discover info
+- trains on the dataset, and draws conclusions on unlabeled data. 
+- unsupervised learning has more difficult algorithms than supervised 
+learning since we know little to no information about the data, or the 
+outcomes that are to be expected
+
+Techniques: 
+- Dimension Reduction
+- Density Estimation
+- Market basket analysis
+- clustering
+    - grouping of data points or objects that somehow similar by:
+        1. discovering structure
+        2. summarization
+        3. Anomaly detection
+        

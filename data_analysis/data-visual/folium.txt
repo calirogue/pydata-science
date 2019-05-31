@@ -1,0 +1,2 @@
+Folium
+- Python library that helps create several types of leaflet maps
