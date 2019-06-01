@@ -1,0 +1,15 @@
+Classification 
+- A supervised learning approach
+- Categorizing some unknown items into a discrete set of 
+categories or "classes"
+- The target attribute is a categorical variable
+- determines the class label for an unlabeled test case. 
+
+Multi-class classifier 
+- can predict a field with multiple discrete values
+
+Use cases: 
+Which category a customer belongs to? 
+Whether a customer switches to another provider/brand?
+Whether a customer responds to a particular advertising campaign?
+

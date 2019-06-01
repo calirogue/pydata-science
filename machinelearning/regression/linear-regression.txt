@@ -1,0 +1,180 @@
+Regression
+
+
+What is regression?
+- process of predicting a continuous value
+
+Two type of variables 
+1. Y: Dependent variable
+- final goal
+
+2. X: Independent variable 
+- causes of the final goal
+
+Two types of Regression model
+1. Simple Regression:
+    - Simple Linear Regression
+    - Simple non-linear regression
+    ex: 
+    Predict co2 emission vs engine size of all cars
+
+2. Multiple Regression:
+    - Multiple Linear Regression
+    - Multiple non-linear regression
+    ex: 
+    Predict co2 emission vs engine size and cylinders of all cars
+
+
+Applications of regression
+- sale forecasting
+- satisfaction analysis 
+- price estimation
+- employment income
+
+Regression algorithms 
+- Ordinal regression
+- poisson regression
+- fast forest quantile regression
+- linear, polynomial, lasso, stepwise, ridge regression
+- bayesian linear regression
+- neural network regression
+- decision forest regression
+- boosted decision tree regression
+- KNN (K-nearest neighbors)
+
+
+-----------------------------------------------------------------
+Simple Linear Regression
+
+- using linear regression to predict continuous values
+
+- Linear regression is the approximation of a linear model used to describe the 
+relationship between two or more variables. 
+
+- In simple linear regression, there are two variables, a dependent variable and 
+an independent variable. 
+
+- The key point in the linear regression is that our dependent value should be 
+continuous and cannot be a discrete value.
+
+
+
+Two types of linear regression models
+1. Simple linear regression 
+    - Predict co2emission vs engineSize of all cars
+        - Independent variable (x): engineSize
+        - Dependent variable (y): co2emission
+
+2. Multiple linear regression
+    - Predict co2 emission vs engine size and cylinders of all cars
+        - Independent variable (x): engineSize, cylinders, etc
+        - Dependent variable (y): co2emission
+
+
+Linear regression model representation:
+y = O0+O1x1
+y hat = Theta zero plus Theta one X one
+y hat is the response variable
+
+x1 = 2.4 independent variable
+y = 250 actual co2 emission of x1 
+
+Linear regression estimates the coefficients of the line. This means we must 
+calculate theta 0 and theta 1 to find the best line to fit the data. This line
+would best estimate the emission of the unknown data points. Let's see how we 
+can find this line or, to be more precise, how we can adjust the parameters to 
+make the line the best fit for the data.
+
+--------------------------------------------------
+
+
+
+Model Evaluation in regression models 
+
+Model evaluation approaches
+- train and test on the same dataset
+- train/test split
+
+Regression Evaluation metrics
+
+
+What is training and out of sample accuracy?
+- Training accuracy
+    - % of correct preditions that the model makes when using the test dataset
+    - high training accuracy isn't necessarily a good thing
+    - result of over-fitting
+        - over-fit: the model is overly trained to the dataset, which may capture
+        noise and produce a non-generalized model
+
+- out of sample accuracy
+    - models have a high out of sample accuracy
+    - train / test / split
+
+Validation between test / training 
+-- k-fold cross validation
+- using the same dataset where each split is different
+
+
+--------------------------------------------------------------
+
+
+
+Evaluation Metrics in regression models
+- regression accuracy
+- compare actual and predicted values to calculate the accuracy of a regression 
+model
+- Evaluation metrics, provide a key role in the development of a model, as it 
+provides insight to areas that require improvement.
+
+
+What is an error of the model?
+- error: measure of how far the data is from the fitted regression line
+
+
+---------------------------------------------------------------------
+
+
+
+Multiple Linear Regression
+
+
+Two types of linear regression models
+1. Simple linear regression 
+    - Predict co2emission vs engineSize of all cars
+        - Independent variable (x): engineSize
+        - Dependent variable (y): co2emission
+
+2. Multiple linear regression
+    - Predict co2emission vs enginesize and cylinders of all cars
+        - Independent variable (x): engineSize, cylinders, etc
+        - Dependent variable (y): co2emission
+
+
+1. First, it can be used when it would like to identify the strength of the 
+effect that the independent variables have on the dependent variable.
+
+2. Second, it can be used to predict the impact of changes, that is, to 
+understand how the dependent variable changes when we change the independent 
+variables.
+
+Examples of Multiple linear regression
+- independent variables effectiveness on prediction
+    - does revision time, test anxiety, lecture attendance and gender have any
+    effect on the exam performance of students?
+
+- Predicint impacts of change
+    - How does blood pressure go up or down for every unit increase or decrease
+    in the BMI of a patient?
+
+
+Estimating Multiple linear regression parameters
+    How to estimate theta?
+        - Ordinary least squares
+            - Linear algebra operations
+            - takes a long time for large datasets (10k+rows)
+
+        - An optimization algorithm
+            - Gradient descent
+            - Proper approach if you have a very large dataset
+
+Note - use limited variables or many variables for prediction

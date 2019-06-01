@@ -1,0 +1,22 @@
+Non-Linear Regression 
+- to model non-lenear relationship between the dependent variable and a set of
+independent variables
+- y-hat must be a non-linear function of the parameters theta, not necessarily the
+futures x
+
+
+What is polynomial regression?
+- Some curvy data can be modeled by a polynomial regression
+- a polynomial regression model can be transformed into Linear
+regression model
+
+Linear vs non-linear regression
+How to determine if the problem is linear or non-linear?
+    - inspect visually
+    - based on accuracy
+
+How to model data, if it displays non-linear on a scatter plot?
+    - polynomial regression
+    - non-linear regression model
+    - transform your data
+    
