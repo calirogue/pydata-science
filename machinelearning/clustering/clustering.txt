@@ -1,0 +1,65 @@
+Clustering
+- finding points in a dataset unsupervised
+- group of objects that are similar to other objects in the cluster, and 
+dissimilar to data points in other clusters.
+
+Clustering for segmentation
+- analyyical approach to deriving segments and groups from large datasets
+- group data unsupervised
+
+Clustering vs classification
+
+Classification:
+- labeled dataset - structured data > modeling -> decision tree
+- Supervised data
+
+Clustering:
+unlabeld dataset - unstructured data > modeling -> K-means
+- Unsupervised data
+
+
+Applications
+    Retail/Marketing:
+        - Id buying patterns of customers
+        - recommending new books or movies to new customers
+    
+    Banking:
+        - Fraud detection in credit card use
+        - id clusters of customers (loyal)
+    
+    Insurance: 
+        - Fraud detection in claims analysis
+        - Insurance risk of customers
+    
+    Publication:
+        - Auto-categorizing news based on their content
+        - Recommending similar news articles
+
+    Medicine: 
+        - Characterizing patient behavior
+
+    Biology:
+        - Clustering genetic markers to id family ties
+
+    
+Why?
+    - Exploratory data analysis
+    - Summary generation
+    - Outlier detection
+    - Finding duplicates
+    - Pre-processing step
+
+
+Clustering algorithms
+    Partitioned-based Clustering:
+        - Relatively efficient
+        - K-means, K-median, Fuzzy c-means
+    
+    Hierarchical Clustering:
+        - Produces trees of clusters
+        - Agglomerative, Divisive
+
+    Density-based Clustering:
+        - Produces arbitrary shaped clusters
+        - space clusters
+        - DBSCAN

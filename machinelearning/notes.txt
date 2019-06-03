@@ -136,3 +136,5 @@ Techniques:
         2. summarization
         3. Anomaly detection
         
+
+https://eu-gb.dataplatform.cloud.ibm.com/analytics/notebooks/v2/85e10df2-2b04-45aa-97d1-7803a53861a3/view?access_token=52bf74fc718a57889ff3d4360e044c419e1f273d129a1cee42619e1099e595e8

@@ -1,0 +1,41 @@
+K-means clustering
+- group only unsupervised
+- Partitioning
+- divides the data into non-overlapping subsets (clusters) without any
+cluser-internal structure.
+- examples within a cluser are very similar
+- examples across different clusers are very different
+
+
+1. K-means clustering - initialize K
+Initialize k=3
+centroids randomly
+
+2, K-means clustering - calculate the distance
+Distance calculation
+
+3. K-means clustering - assign to centroid
+Assign each point to the closest centroid
+
+4. K-means clustering - compute new centroids
+Compute the new centroids for each cluster
+
+5. k-means clustering - repeat
+Repeat until there are no more changes
+
+----------------------------------------------------
+
+K-means clustering algorithm
+1. Randomly placing k centroids, one for each cluster
+2. Calculate the distance of each point from each centroid
+3. Assign each data point (object) to its closest centroid, creating a cluster
+4. Recalculate the position of the k centroids
+5. Repeat the steps 2-4, until the centroids no longer move. 
+
+K-means accuracy
+- External approach
+    - compare the clusters with the ground truth, if its available
+
+- Internal approach
+    - average the distance between data points within a cluster
+    

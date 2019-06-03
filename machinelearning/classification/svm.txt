@@ -1,0 +1,35 @@
+Support Vector Machine (SVM)
+- understand patterns within the data
+- SVM is a supervised algorithm that classifies cases by finding a separator
+1. Mapping data to a high-dimensional feature space
+2. Finding a separator
+
+Data transformation
+Mapping data in a higher dimensional space is called "Kernelling"
+Kernelling function:
+- Linear
+- Polynomial
+- RBF
+- Sigmoid
+
+Using SVM to find the hyperplane 
+- A linear line that seperates color1 points from another color2 points in a graph
+- Support vectors help achieve the goal
+
+Pros and cons of SVM
+- Advantages:
+    - Accurate in high-dimensional spaces
+    - Memory efficient
+
+Disadvantages: 
+    - Prone to over-fitting
+    - No probability estimation
+    - small datasets
+
+Applications:
+    - Image recognition
+    - Text category assignment
+    - Detecting spam
+    - Sentiment analysis
+    - Gene expression classifaction 
+    - regression, outlier detection, and clustering

@@ -1,0 +1,51 @@
+Classification: K-nearest neighbours
+
+- A method for classifying cases based on their similarity to other cases
+- Cases that are near each other are said to be "neighbors"
+- Bases on similar cases with same class labels are near each other
+
+
+* K-Nearest neighbors algorithm
+1. Pick a value for K. 
+2. Calculate the distance of unknown case from all cases
+3. Select the K-observations in the training data that are "nearest" to the
+unknown data point. 
+4. Predict the response of the unknown data point using the most popular response
+value from the K-nearest neighbors
+
+
+Calculating the similarity / distance in a 1-dimensional space
+Customer 1
+Age: 54
+Income: 190
+
+Customer 2
+Age: 50
+Income 200
+
+Calculate different vectors
+
+Calculating the similarity / distance in a 2-dimensional space
+Customer 1
+Age: 54
+Income: 190
+Education: 3 
+
+Customer 2
+Age: 50
+Income 200
+Education 8
+
+Different values in variables. 
+
+
+What is the best value of K for KNN? 
+- K and K-Nearest Neighbors is the number of nearest neighbors to examine. 
+It is supposed to be specified by the user.
+
+Overfitting is bad
+
+KNN can also be used for regression
+- computing continuous targets using KNN
+
+

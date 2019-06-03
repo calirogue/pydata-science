@@ -1,0 +1,7 @@
+Evaluation Metrics in Classification
+- Explains the performance of a model
+- Classification accuracy
+
+Jaccard Index
+- y: actual labels
+- y-hat: predicted labels

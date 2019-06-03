@@ -1,0 +1,93 @@
+Logistic Regression
+- might try to predict a continuous value of variables such as the price of a 
+house, blood pressure of a patient, or fuel consumption of a car. 
+- But in logistic regression, we predict a variable which is binary such as 
+yes/no, true/false, successful or not successful, pregnant/not pregnant, and 
+so on, all of which can be coded as zero or one.
+- yes or no
+- 0 or 1 
+
+What is logistic regression?
+- a classification alforithm for categorical variables
+
+Churn 
+- Dependent variable 
+
+Applications:
+- Predicting the probability of a person having a heart attack
+- Predicting the mortality in injured patients 
+- Predicting a customers propensity to purchase a product or half a subscription
+- Predicting the probability of failure of a given process or product
+- Predicting the likelihood of a homeowner defaulting on a mortgage
+
+
+When is logistic regression suitable?
+- If your data is binary
+    - 0/1, yes/no, true/false
+- if you need the probability results
+- when you need a linear decision boundary
+- if you need to understand the impact of a feature
+
+
+-----------------------------------------------------------------
+
+Logistic regression vs linear regression
+
+Predicting churn using linear regression 
+- theta is a vector of parameters 
+- linear regression is not good for classification problems
+
+The problem with using linear regression
+- returns a number besides 0 or 1. outputs a number greater than 0 or 1
+
+Sigmoid function in logistic regression
+- logistic function
+
+classification of the customer churn model
+P(Y=1|X)
+P(y=0|X) = 1 - P(y=1|x)
+
+P(Churn=1|income,age)=0.8
+P(Churn=0|income,age)=1-0.8=0.2
+
+Training process:
+1. Initialize theta vector with random values
+2. Calculate y-hat = sigmoid of theta transpose x
+- prediction value
+3. Compare the output of y-hat with actual output of customer, y, and record 
+it as error. 
+4. Calculate the error for all customers
+- cost function 
+5. change the theta to reduce the cost
+- reduce the cost
+6. Go back to step 2
+
+
+
+-----------------------------------------------------
+
+- Logistic Regression Training -
+
+
+General cost function
+- Change the weight -> reduce the cost
+
+- Cost function
+
+Plotting the cost function of the model
+- model yhat
+- actual value y=1 or 0
+- if Y=1 and yhat=1 -> cost =0
+
+Logistic regression cost function
+
+Minimizing the cost function of the model
+- How to find te best parameters for our model?
+    - Minimize the cost function
+
+- How to minimize the cost function?
+    - Using gradient descent
+
+- What is gradient descent?
+    - A technique to use the derivative of a cost function to change the parameter
+    values, in order to minimize the cost

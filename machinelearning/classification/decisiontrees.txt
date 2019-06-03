@@ -1,0 +1,22 @@
+Decision Trees
+- Decision trees are built by splitting the training set into distinct nodes,
+where one node contains all of or most of one category of the data.
+- Each internal node corresponds to a test
+- Each branch corresponds to a result of the test
+- Each leaf node assigns a classification
+
+
+Decision tree learning algorithm
+1. Choose an attribute from your dataset
+2. Calculate the significance of attribute in splitting of data.
+3. Split data based on the value of the best attribute
+4. Go to step 1. 
+
+
+--------------------------------------------
+Building Decision Trees
+- Decision trees are built using recursive partitioning to classify the data.
+
+Entropy 
+- Measure of randomness or uncertainty
+- Lower the Entropy, the less uniformm the distribution, the purer the node
