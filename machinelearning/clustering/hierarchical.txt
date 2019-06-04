@@ -1,2 +1,58 @@
 Hierarchical clustering
-- 
+- algorithms build a hierarchy of clusters where each node is a cluster consists 
+of the clusters of its daughter nodes
+- can be slow for large datasets
+- does not require the number of clusters to run
+- gives more than one partitioning depending on the resolution
+- always generates the same clusters
+
+Two types:
+    Agglomerative:
+        - bottom up
+        - each clusters are built up 
+        - collect things
+        - more popular
+
+    Divisive:
+        - top down 
+        - break it down into smaller pieces
+
+
+Agglomerative clustering
+    - Dendrogram
+    - bottom up approach
+
+    Steps:
+        1. Create n clusters, one for each data point
+        2. Compute the proximity matrix
+        3. Repeat
+            i. merge the two closest clusters
+            ii. update the proximity matrix
+        4. Until only a single cluster remains
+
+
+Distance between clusters 
+- Single-linkage clustering
+    - minimum distance between clusters
+
+- complete-linkage clustering
+    - maximum distance between clusters
+
+- average linkage clustering
+    - average distance between clusters
+
+- centroid linkage clustering
+    - distance between cluster centroids
+
+
+Advantages:
+- doesnt require number of clusters to be specified
+- easy to implement 
+- produces a dendrogram, which helps with understanding the data
+
+Disadvantages:
+- can never undo any previous steps throughout the algorithm
+- generally has long runtimes
+- sometimes difficult to identify the number of clusters by the dendrogram
+
+

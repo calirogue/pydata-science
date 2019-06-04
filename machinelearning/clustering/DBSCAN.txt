@@ -1,0 +1,21 @@
+DBSCAN clustering
+    - Density based clustering
+    - spherical-shape clusters
+    - arbitrary-shape clusters
+    - clusters inside clusters
+
+K-means vs DBSCAN
+k-means: assigns all points to a cluster even if they don't belong in any
+DBSCAN: locates regions of high density and separates outliers
+
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+    - is one of the most common clustering algorithms
+    - works based on density of objects
+
+R(radius of neighborhood)
+    - Radius (R) that if includes enough number of points within, we call it a
+    dense area
+
+M(Min number of neighbors)
+    - The minimum number of data points we want in a neighborhood to define a
+    cluster
