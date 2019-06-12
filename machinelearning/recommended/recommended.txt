@@ -1,0 +1,111 @@
+Content-based recommendation engines
+- Recommender systems capture of peoples behavior and use it to predict what else
+they might want or like
+
+Applications:
+    - Netflix
+    - amazon
+
+What to buy?
+    - E-commerce: books, movies, beer, shoes, etc
+Where to eat? 
+Which job to apply to?
+Who you should be friends with?
+    - linkedin, facebook
+Personalize your experience on the web
+    - news platforms, news personalization
+
+Advantages of recommender systems
+    - broader exposure
+    - possibility of continual usage or purchase of products
+    - provides better experience
+
+Two types of recommendation systems
+1. Content based
+    - show me more of the same of what i've liked before
+    - similar items
+2. Collaborative filtering
+    - tell me what's popular among my neighbors, i also might like it
+    - similar preferences
+
+Implementing recommender systems
+    1. Memory-based
+        - uses the entire user-item dataset to generate a recommendation
+        - uses statisical techniques to approximate users or items
+        - Pearson correlaion, cosine similarity, euclidean distance
+
+    2. Model-based
+        - develops a model of users in an attempt to learn their preferences
+        - models can be created using machine learning techniques like regression,
+        clustering, classification
+
+
+1. interested in - wrong
+2. all the above - wrong 
+3. dataset - wrong 
+4. user-item - right
+5. characterisitics - right
+
+1. all the above
+2. perferences
+3. ratings
+
+
+-------------------------------------------------------------------
+Content-based recommender systems
+- user profile
+    - user ratings
+    - perferences in their profile
+    - closeness of those items
+        - the content within the items
+    - content > category > genre etc 
+
+
+Weighing the genre matrix:
+1. Create a vector
+2. generate a feature set
+3. feature to a matrix
+
+1. We call it Input User Ratings. 
+2. Then, we encode the movies through the one-hot encoding approach. 
+Genre of movies are used here as a feature set. 
+3. We use the first three movies to make this matrix, which represents the movie 
+feature set matrix. If we multiply these two matrices we can get the weighted 
+feature set for the movies. Let's take a look at the result. 
+4. This matrix is also called the Weighted Genre matrix and represents the 
+interests of the user for each genre based on the movies that she's watched.
+
+Finding the recommendation:
+- User profile matrix multiply with the movies matrix
+- results = weighted movies matrix == recommendation matrix
+
+-------------------------------------------------------------------
+Collaborative filtering
+
+1. User-based Collaborative filtering:
+    - Based on users neighborhood
+    - looks for other users with the same perferences, rating patterns
+        - choices, ratings, perferences, rating highly
+    - user ratings matrix
+    - euclidean distance, pearson correlaion, cosine similarity
+    1. learning the similarity weights
+    2. creating the weighted ratings matrix: 
+    - ratings matrix subset || similarity matrix = weight ratings matrix
+    3. recommendation matrix
+    - similarity of items
+
+2. Item-based Collaborative filtering:
+    - Based on items similarity
+    - build neighborhoods, not based off of the contents
+
+
+Challenges of Collaborative filtering:
+1. Data Sparsity
+    - users in general rate only a limited number of items
+
+2. Cold start
+    - difficulty in recommendation to new users or new items
+
+3. Scalability
+    - increase in number of users or items
+
